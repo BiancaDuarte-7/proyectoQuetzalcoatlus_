@@ -1,0 +1,118 @@
+/* Fondo azul del header */
+header {
+    background-color: #007bff; /* Azul Bootstrap */
+    border-bottom-left-radius: 40px;  /* Redondeo solo abajo a la izquierda */
+    border-bottom-right-radius: 40px; /* Redondeo solo abajo a la derecha */
+}
+
+/* Logo redondo */
+.logo {
+    max-width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Contenedor que encierra ambos botones */
+.btn-container {
+    background-color: #0056b3; /* Azul más oscuro */
+    padding: 0.8rem 2rem; /* Más alto y más ancho */
+    border-radius: 40px; /* Bordes más suaves */
+    display: flex;
+    gap: 2rem; /* Más separación entre textos */
+    align-items: center;
+}
+
+/* Estilo de enlaces dentro del contenedor */
+.btn-container a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.4rem; /* Texto más grande */
+    transition: color 0.2s ease-in-out, text-decoration 0.2s ease-in-out;
+}
+
+/* Efecto hover */
+.btn-container a:hover {
+    color: #ffdd57; /* Amarillo suave */
+    text-decoration: underline;
+}
+
+main {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  gap: 3rem; /* <-- Aumenté el espacio entre texto e imagen */
+}
+
+.left-text {
+  flex: 0 0 35%; /* <-- El texto ocupa un poco más (antes 30%) */
+}
+
+.board-image {
+  flex: 0 0 60%; /* <-- Imagen más chica que antes (antes 70%) */
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  object-fit: contain;
+}
+
+/* El resto queda igual */
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    text-align: center;
+  }
+  .left-text, .board-image {
+    flex: none;
+    max-width: 100%;
+  }
+  .draftosaurios {
+    font-size: 2.5rem;
+  }
+  .board-image {
+    margin-top: 2rem;
+    max-width: 90%;
+  }
+}
+
+.left-text {
+  flex: 0 0 30%; /* <-- Antes era max-width, ahora para que ocupe solo 30% */
+}
+
+.left-text h1 {
+  font-weight: 700;
+}
+
+.draftosaurios {
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: #0d6efd;
+}
+
+
+
+.seccion-texto {
+  background-color: #f8f9fa; /* fondo claro */
+  border-radius: 0.5rem;     /* bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* sombra suave */
+  padding: 2rem 1.5rem;
+  margin: 3rem auto;
+  max-width: 700px;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #495057;
+}
+
+.seccion-texto h2 {
+  color: #0d6efd; /* azul bootstrap */
+  margin-bottom: 1rem;
+}
+
+.seccion-texto p {
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
